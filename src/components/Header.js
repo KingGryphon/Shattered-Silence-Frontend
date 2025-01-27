@@ -12,8 +12,25 @@ const Header = () => {
     ];
 
     return (
-        
+        <header>
+            <div className='hero-image-a'>
+                <div className='hero-text'>
+                    <h1 className='a'>Shattered Silence</h1>
+                    <h2 className='a'>Raise Your Voice!</h2>
+                </div>
+            </div>
+            <br />
+            <nav className='navbar'>
+                {links.map((link, index) => (
+                    <li key={index}>
+                        <a href={link.href}>
+                            {link.text}
+                        </a>
+                    </li>
+                ))}
+            </nav>
+        </header>
     )
 };
 
-export default Header; 
+export default Header;
