@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'AerialDker';
+    src: url(Aerial_Dker.ttf);
+}
+@font-face {
+    font-family: 'Breakaway';
+    src: url(breakaway.ttf);
+}
+@font-face {
+    font-family: 'BrokenGlass';
+    src: url(BrokenGlass.ttf);
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(Roboto-Italic-VariableFont_wdth\,wght.ttf);
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(Roboto-VariableFont_wdth\,wght.ttf);
+    font-style: normal;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    color: whitesmoke;
+}
+.container {
+    color: whitesmoke;
+    font-family: 'Roboto';
+    font-size: large;
+    line-height: 1.6;
+    background-color: black;
+    max-width: 1000px;
+}
+.hero-image-a {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("background1.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-image-b {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("background2.jpg");
+    height: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text {
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+h1.a {
+    font-family: 'AerialDker';
+    font-weight: lighter;
+    font-size: 500%;
+    color: whitesmoke;
+}
+h2.a {
+    font-family: 'Breakaway';
+    font-weight: lighter;
+    font-size: 300%;
+    color: whitesmoke;
+}
+.navbar {
+    overflow: hidden;
+    background-color: rgb(24, 24, 24);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: 'BrokenGlass';
+    text-decoration: none;
+    font-size: 250%;
+}
+.navbar a:hover {
+    color: gray;
+    text-decoration: none;
+}
+.navbar a:visited {
+    color: whitesmoke;
+    text-decoration: none;
+}
+.navbar .icon {
+    display: none;
+} 
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      bottom:0;
+}
+.navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
