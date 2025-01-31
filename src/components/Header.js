@@ -22,6 +22,7 @@ const Header = () => {
             </div>
             <br />
             <nav className='navbar'>
+                <ul className='nav-links'>
                 {links.map((link, index) => (
                     <li key={index}>
                         <a href={link.href}>
@@ -29,6 +30,7 @@ const Header = () => {
                         </a>
                     </li>
                 ))}
+                </ul>
             </nav>
         </header>
     )
