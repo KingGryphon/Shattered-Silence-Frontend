@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Header = () => {
+const Hero = () => {
 
     const links = [
         {href: './pages/Home.js', text: 'Home'},
@@ -36,4 +36,4 @@ const Header = () => {
     )
 };
 
-export default Header;
+export default Hero;
